@@ -12,3 +12,4 @@ D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\refint\BelEncrypt.dll
 D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.pdb
 D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.genruntimeconfig.cache
 D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\ref\BelEncrypt.dll
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.sourcelink.json
