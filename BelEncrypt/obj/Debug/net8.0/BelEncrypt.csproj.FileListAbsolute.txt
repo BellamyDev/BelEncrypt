@@ -1,0 +1,14 @@
+D:\Projects\BelEncrypt\BelEncrypt\bin\Debug\net8.0\BelEncrypt.exe
+D:\Projects\BelEncrypt\BelEncrypt\bin\Debug\net8.0\BelEncrypt.deps.json
+D:\Projects\BelEncrypt\BelEncrypt\bin\Debug\net8.0\BelEncrypt.runtimeconfig.json
+D:\Projects\BelEncrypt\BelEncrypt\bin\Debug\net8.0\BelEncrypt.dll
+D:\Projects\BelEncrypt\BelEncrypt\bin\Debug\net8.0\BelEncrypt.pdb
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.AssemblyInfoInputs.cache
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.AssemblyInfo.cs
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.csproj.CoreCompileInputs.cache
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.dll
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\refint\BelEncrypt.dll
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.pdb
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\BelEncrypt.genruntimeconfig.cache
+D:\Projects\BelEncrypt\BelEncrypt\obj\Debug\net8.0\ref\BelEncrypt.dll
