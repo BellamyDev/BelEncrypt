@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BelEncrypt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5584b33960d0fcaa95feb4319d685b084d85bbae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b9f6f37b3e1be73d9bcc337b287583714606bdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BelEncrypt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BelEncrypt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
