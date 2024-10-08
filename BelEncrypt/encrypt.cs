@@ -15,6 +15,13 @@ public class encryptor{
         char[] charArr= new char[word.Length];
         verboseMode.vPrint("Converting string to char array");//sends message to verboseMode
         charArr=word.ToLower().ToCharArray();
+        string temp = "";
+        string encryptedWord = "";
+        verboseMode.vPrint("Encrypting string");//sends message to verboseMode
+        for(int i=0;i<word.Length;i++){//encrypts each letter in the word
+            temp = letterEncrypt.encryptLetter(charArr[i]);
+            encryptedWord = encryptedWord + temp;//addes encrypted letters to the overallword
+        }
 
 
     }
