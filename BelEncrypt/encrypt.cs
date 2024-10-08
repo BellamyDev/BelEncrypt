@@ -5,13 +5,17 @@ public class encryptor{
         string word;
         Console.WriteLine("Enter a string to encrypt: ");
         word=Console.ReadLine();
+        if(word.Length==0){
+            verboseMode.vPrint("No string entered");//sends message to verboseMode
+            Console.WriteLine("No string entered, exiting program");
+            Environment.Exit(0);
+        }
         verboseMode.vPrint("String to encrypt: " + word);//sends message to verboseMode
         return word;
         
     }
     public void encryptString(string word){
         verboseMode.vPrint("Starting string encryption");//sends message to verboseMode
-        string newWord;
         char[] charArr= new char[word.Length];
         verboseMode.vPrint("Converting string to char array");//sends message to verboseMode
         charArr=word.ToLower().ToCharArray();
