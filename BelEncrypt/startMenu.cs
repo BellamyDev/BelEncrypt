@@ -11,8 +11,8 @@ public class startMenu
         {
             Console.WriteLine("Welcome to BelEncrypt!");
             Console.WriteLine("Please select an option:");
-            Console.WriteLine("1. Encrypt a file");
-            Console.WriteLine("2. Decrypt a file");
+            Console.WriteLine("1. Encrypt a Message");
+            Console.WriteLine("2. Decrypt a Message");
             Console.WriteLine("3. Toggle verbose mode");
             Console.WriteLine("4. Exit");
             Console.Write("Option: ");
@@ -22,14 +22,14 @@ public class startMenu
             switch (option)
             {
                 case "1":
-                    Console.WriteLine("You selected Encrypt a file");
+                    Console.WriteLine("You selected Encrypt a Message");
                     repeat = false; 
                     value = 1;
                     
                     break;
                     
                 case "2":
-                    Console.WriteLine("You selected Decrypt a file");
+                    Console.WriteLine("You selected Decrypt a Message");
                     repeat = false;
                     value = 2;
                     break;
@@ -45,8 +45,7 @@ public class startMenu
                     break;
                 default:
                     Console.WriteLine("Invalid option. Please try again.");
-                    Console.Write("Option: ");
-                    option = Console.ReadLine();
+            
                     
                     break;
             }
