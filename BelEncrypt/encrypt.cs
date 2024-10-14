@@ -1,33 +1,41 @@
-public class encryptor{
-    public string getString(){
-        verboseMode.vPrint("Getting string to encrypt");//sends message to verboseMode
+public class encrypt
+{
+    public string getString()
+    {
+        verboseMode.vPrint("Getting string to encrypt"); //sends message to verboseMode
 
         string word;
         Console.WriteLine("Enter a string to encrypt: ");
-        word=Console.ReadLine();
-        if(word.Length==0){
-            verboseMode.vPrint("No string entered");//sends message to verboseMode
+        word = Console.ReadLine();
+        if (word.Length == 0)
+        {
+            verboseMode.vPrint("No string entered"); 
             Console.WriteLine("No string entered, exiting program");
             Environment.Exit(0);
         }
-        verboseMode.vPrint("String to encrypt: " + word);//sends message to verboseMode
+        verboseMode.vPrint("String to encrypt: " + word); 
         return word;
-        
     }
-    public void encryptString(string word){
-        verboseMode.vPrint("Starting string encryption");//sends message to verboseMode
-        char[] charArr= new char[word.Length];
-        verboseMode.vPrint("Converting string to char array");//sends message to verboseMode
-        charArr=word.ToLower().ToCharArray();
+
+    public string encryptString(string word)
+    {
+        verboseMode.vPrint("Starting string encryption");
+        char[] charArr = new char[word.Length];
+        verboseMode.vPrint("Converting string to char array"); 
+        charArr = word.ToLower().ToCharArray();
+
         string temp = "";
         string encryptedWord = "";
-        verboseMode.vPrint("Encrypting string");//sends message to verboseMode
-        for(int i=0;i<word.Length;i++){//encrypts each letter in the word
+        verboseMode.vPrint("Encrypting string"); 
+
+        for (int i = 0; i < word.Length; i++)
+        {
+            // Use letterEncrypt to handle both letters and numbers
             temp = letterEncrypt.encryptLetter(charArr[i]);
-            encryptedWord = encryptedWord + temp;//addes encrypted letters to the overallword
+            encryptedWord = encryptedWord + temp; 
         }
 
-
+        verboseMode.vPrint("Encrypted message: " + encryptedWord); 
+        return encryptedWord; 
     }
-
 }

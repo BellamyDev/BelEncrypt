@@ -1,9 +1,17 @@
 public class letterEncrypt
 {
+    // Encrypts a letter or wraps a number between '%' characters
     public static string encryptLetter(char letter)
     {
         string encryptedLetter;
 
+        if (char.IsDigit(letter))
+        {
+            // Wrap the number in '%' and return it as is
+            return $"%{letter}%";
+        }
+
+        // Switch statement for encrypting lowercase letters and space
         switch (letter)
         {
             case 'a':
@@ -84,102 +92,92 @@ public class letterEncrypt
             case 'z':
                 encryptedLetter = "0x68a";
                 break;
+            case ' ':
+                encryptedLetter = "0x00s"; // Encrypted representation for space
+                break;
             default:
-                encryptedLetter = letter.ToString();
+                encryptedLetter = letter.ToString(); // Include unsupported characters unencrypted
                 break;
         }
 
         return encryptedLetter;
     }
-        public static char DecryptLetter(string encryptedLetter)
-    {
-        char decryptedLetter = '\0';
 
+    // Decrypts an encrypted letter or extracts the number wrapped in '%' characters
+    public static string DecryptLetter(string encryptedLetter)
+    {
+        if (encryptedLetter.StartsWith("%") && encryptedLetter.EndsWith("%"))
+        {
+            // If the encryptedLetter is wrapped in %, it's a number
+            if (encryptedLetter.Length == 3) // Ensure it's in format %X%
+            {
+                return encryptedLetter[1].ToString(); // Extract the number between the '%' signs
+            }
+            else
+            {
+                return encryptedLetter; // Return as is (could not decrypt)
+            }
+        }
+
+        // Switch statement for decrypting letters and space
         switch (encryptedLetter)
         {
             case "0x13r":
-                decryptedLetter = 'a';
-                break;
+                return "a";
             case "0x24y":
-                decryptedLetter = 'b';
-                break;
+                return "b";
             case "0x35x":
-                decryptedLetter = 'c';
-                break;
+                return "c";
             case "0x46w":
-                decryptedLetter = 'd';
-                break;
+                return "d";
             case "0x57v":
-                decryptedLetter = 'e';
-                break;
+                return "e";
             case "0x68u":
-                decryptedLetter = 'f';
-                break;
+                return "f";
             case "0x79t":
-                decryptedLetter = 'g';
-                break;
+                return "g";
             case "0x80s":
-                decryptedLetter = 'h';
-                break;
+                return "h";
             case "0x91r":
-                decryptedLetter = 'i';
-                break;
+                return "i";
             case "0x02q":
-                decryptedLetter = 'j';
-                break;
+                return "j";
             case "0x13p":
-                decryptedLetter = 'k';
-                break;
+                return "k";
             case "0x24o":
-                decryptedLetter = 'l';
-                break;
+                return "l";
             case "0x35n":
-                decryptedLetter = 'm';
-                break;
+                return "m";
             case "0x46m":
-                decryptedLetter = 'n';
-                break;
+                return "n";
             case "0x57l":
-                decryptedLetter = 'o';
-                break;
+                return "o";
             case "0x68k":
-                decryptedLetter = 'p';
-                break;
+                return "p";
             case "0x79j":
-                decryptedLetter = 'q';
-                break;
+                return "q";
             case "0x80i":
-                decryptedLetter = 'r';
-                break;
+                return "r";
             case "0x91h":
-                decryptedLetter = 's';
-                break;
+                return "s";
             case "0x02g":
-                decryptedLetter = 't';
-                break;
+                return "t";
             case "0x13f":
-                decryptedLetter = 'u';
-                break;
+                return "u";
             case "0x24e":
-                decryptedLetter = 'v';
-                break;
+                return "v";
             case "0x35d":
-                decryptedLetter = 'w';
-                break;
+                return "w";
             case "0x46c":
-                decryptedLetter = 'x';
-                break;
+                return "x";
             case "0x57b":
-                decryptedLetter = 'y';
-                break;
+                return "y";
             case "0x68a":
-                decryptedLetter = 'z';
-                break;
+                return "z";
+            case "0x00s":
+                return " "; 
             default:
-                decryptedLetter = '\0';
-                break;
+                return encryptedLetter; // Return as is for unsupported characters
         }
-
-        return decryptedLetter;
     }
 }
