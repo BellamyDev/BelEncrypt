@@ -1,6 +1,6 @@
 # BelEncrypt
 
-BelEncrypt is a command-line encryption tool written in C#. It converts text into a series of encrypted codes based on a custom letter-to-code mapping. The program supports both uppercase and lowercase letters by converting all letters to lowercase before encryption. It also offers a verbose mode for detailed operation logging.
+BelEncrypt is a command-line encryption tool written in C#. It converts text into a series of encrypted codes based on a custom letter-to-code mapping. The program supports both encryption and decryption. It accepts both uppercase and lowercase letters (converting all letters to lowercase before processing) and offers a verbose mode for detailed operation logging.
 
 ---
 
@@ -10,13 +10,16 @@ BelEncrypt is a command-line encryption tool written in C#. It converts text int
   Each letter is replaced by its corresponding encryption code as defined below.
 
 - **Case Support:**  
-  BelEncrypt accepts both uppercase and lowercase letters. All letters are converted to lowercase prior to encryption.
+  BelEncrypt accepts both uppercase and lowercase letters. All letters are converted to lowercase before processing.
+
+- **Encryption & Decryption:**  
+  Users can choose to encrypt or decrypt text.
+
+- **Interactive CLI Menu:**  
+  The program presents a main menu to select options, then prompts for the text input, and finally returns to the main menu once the operation is complete.
 
 - **Verbose Mode:**  
-  Enable verbose mode to see detailed processing information and encryption steps.
-
-- **CLI Application:**  
-  Designed for use in the terminal or command prompt.
+  Enable verbose mode to view detailed processing information and encryption/decryption steps.
 
 ---
 
@@ -57,14 +60,20 @@ The encryption mapping for the English alphabet is as follows (all letters are c
 
 ## How It Works
 
-1. **Input:**  
-   The program accepts a string of text via command-line arguments.
+1. **Main Menu Prompt:**  
+   When you run BelEncrypt, the program displays an interactive main menu with options such as "Encrypt," "Decrypt," and "Exit."
 
-2. **Encryption:**  
-   All alphabetic characters are converted to lowercase. Each letter is then replaced with its corresponding encryption code from the mapping. Non-alphabetic characters are typically left unchanged unless otherwise specified.
+2. **Option Selection:**  
+   Choose the desired operation (encryption or decryption) by entering the corresponding option.
 
-3. **Output:**  
-   The result is printed to the console as a concatenation of encrypted codes. In verbose mode, additional processing details are provided.
+3. **Text Input:**  
+   The program then prompts you to enter the text you wish to process. For encryption, all alphabetic characters are converted to lowercase and then each letter is replaced with its corresponding encryption code. For decryption, the program reverses the encryption process based on the mapping.
+
+4. **Result Display:**  
+   After processing, the resulting encrypted or decrypted text is displayed on the console. If verbose mode is enabled, additional details about the processing steps are shown.
+
+5. **Return to Main Menu:**  
+   Once the operation is complete, the program returns to the main menu, allowing you to perform additional encryptions or decryptions or to exit the application.
 
 ---
 
@@ -86,4 +95,5 @@ The encryption mapping for the English alphabet is as follows (all letters are c
 ## Usage
 
 After building the project, you can run BelEncrypt from the command line.
+
 
